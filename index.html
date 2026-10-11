@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"href="style.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Daily Tasks</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Website Heading -->
+        <h1>My Daily Tasks 📝</h1>
+
+        <p>Organize your day, one task at a time!</p>
+
+        <!-- Task Input Section -->
+        <div class="task-input">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task..."
+                autocomplete="off"
+            >
+
+            <button id="addTaskBtn" type="button">
+                Add Task
+            </button>
+
+        </div>
+
+        <!-- Task Filters -->
+        <div class="filters">
+
+            <button class="filter-btn selected" data-filter="all" type="button">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="active" type="button">
+                Active
+            </button>
+
+            <button class="filter-btn" data-filter="completed" type="button">
+                Completed
+            </button>
+
+        </div>
+
+        <!-- Tasks appear here -->
+        <ul id="taskList"></ul>
+
+        <!-- Pending Task Counter -->
+        <p id="taskCounter">Pending tasks: 0</p>
+
+    </div>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
